@@ -19,3 +19,7 @@
 /assets/vendor/
 ###< symfony/asset-mapper ###
 .idea/
+node_modules
+https:
+http:
+upsun-demo
