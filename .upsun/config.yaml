@@ -77,12 +77,16 @@ applications:
                     passthru: true
 
 # #add_service_start
-# ######################################################################################################################
-# # Step 4: Add a service. Uncomment this section.
-# ######################################################################################################################
-#         relationships:
-#             redis_session: "redis_service:redis"
+      ###############################################################
+      # Step 4: Add a service. Uncomment this section.
+      ###############################################################
+        relationships:
+          redis_session: "redis_service:redis"
 
+services:
+  redis_service:
+    type: "redis:7.0"
+  ###############################################################
 # services:
 #     redis_service:
 #         type: "redis:7.0"
