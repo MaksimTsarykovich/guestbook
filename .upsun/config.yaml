@@ -23,8 +23,6 @@ applications:
         build:
             flavor: none
 
-        disk: 1024
-
         relationships:
             database: "database:postgresql"
 
@@ -53,7 +51,6 @@ applications:
 services:
     database:
         type: "postgresql:16"
-        disk: 1024
 
 routes:
     "https://{default}/":
